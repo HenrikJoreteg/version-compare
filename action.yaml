@@ -1,6 +1,6 @@
 name: 'Checks that version of branch is different than base'
 author: '@HenrikJoreteg'
-description: 'Enforces a version is  bump in the package.json'
+description: 'Enforces a version is bump in the package.json'
 inputs:
   token:
     description: 'Pass in secrets.GITHUB_TOKEN if private repo'
@@ -9,7 +9,7 @@ inputs:
     description: "Pass in name of branch to compare to (defaults to 'main')"
     required: false
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'index.js'
 branding:
   icon: 'check-square'
